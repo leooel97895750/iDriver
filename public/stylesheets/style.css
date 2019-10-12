@@ -1,0 +1,369 @@
+body
+{
+  font-family:Microsoft JhengHei;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+.mymouse
+{
+  cursor: pointer;
+}
+header
+{
+  position: relative;
+  width:100%;
+  height:150px;
+  margin-bottom:10px;
+  float:left;
+  background-color: white;
+  box-shadow:0px 0px 6px black;
+  overflow: hidden;
+  z-index: 1;
+}
+#dark
+{
+  display: none;
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin:0px;
+  background-color:rgba(100,100,100,0);
+}
+#mylogo
+{
+  position: absolute; 
+  top:0px; 
+  left:150px; 
+  width:400px; 
+  height:calc(100% - 20px); 
+  margin:10px; 
+  opacity: 0.8; 
+  z-index: 3;
+}
+#mylogo:hover
+{
+  opacity: 1;
+}
+#pic1
+{
+  position: absolute;
+  bottom:0px; 
+  left:0px; 
+  max-width:100%; 
+  max-height:auto; 
+  z-index: 1;
+  opacity: 1;
+}
+#pic2
+{
+  position: absolute; 
+  bottom:0px; 
+  left:0px; 
+  max-width:100%; 
+  max-height:auto;
+  z-index: 2; 
+  opacity: 1;
+}
+.flexbox_direction{
+	width:100%;
+  margin-bottom:10px;
+	overflow:hidden;
+	display:block;
+}
+#search_background
+{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width:320px;
+  height:auto;
+  margin-left:0px;
+  background-color: rgb(13, 143, 63);
+  z-index: 5;
+  opacity: 1;
+}
+
+#input_start
+{
+  margin-left:5px;
+  margin-bottom:5px;
+  width:250px;
+  padding:5px;
+  border: green 2px solid;
+  font-family:Microsoft JhengHei;
+  z-index: 3;
+}
+#input_end
+{
+  width:250px;
+  margin-left:5px;
+  margin-bottom:10px;
+  padding:5px;
+  border: green 2px solid;
+  font-family:Microsoft JhengHei;
+  z-index: 3;
+}
+#search_image
+{
+  position: relative;
+  top:5px;
+  left:-3px;
+  height:25px;
+  width:25px; 
+  z-index: 3;
+}
+#upsidedown
+{
+  position: absolute;
+  left:295px;
+  top:95px;
+  height:30px;
+  width:20px;
+  z-index: 3;
+}
+.asidebutton
+{
+  position: absolute;
+  top:60px;
+  left:5px;
+  width:40px;
+  height:40px;
+  z-index: 4;
+  margin-left:0px;
+  opacity: 0.8;
+  -webkit-filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.7));
+  filter: drop-shadow(4px 4px 2px rgba(0, 0, 0, 0.7));
+}
+#direction_box
+{
+  display:none;
+  position: absolute;
+  right:0px;
+  top:0px;
+  margin:5px;
+  height:calc(100% - 10px);
+  width:300px;
+  background-color: white;
+  z-index: 4;
+  opacity: 0.8;
+}
+
+#start_button:hover
+{
+  background-color: #46db84;
+}
+#map_direction
+{
+    background-color:#000000;
+    width:100%;
+    height:550px;
+    margin:0px;  
+    z-index: 3;
+}
+.flexbox_roadinfo{
+	width:100%;
+  margin-bottom:10px;
+	overflow:hidden;
+	display:none;
+}
+#areaspeed
+{
+  display:none;
+}
+#cityspeed
+{
+  display:none;
+}
+#regionspeed
+{
+  display:none;
+}
+#map_info
+{
+  background-color:#000000;
+  width:100%;
+  height:550px;
+  margin-top:10px; 
+}
+article
+{
+  position: static;
+	display:block;
+	width:calc(100% - 12px);
+  font-size: 16px;
+  margin:6px;
+  background-color: white;
+  box-shadow:0px 0px 6px black;
+	line-height:24px;
+	color:#333;
+}
+footer
+{
+  width:100%;
+  height:150px;
+  margin-bottom:0px;
+  float:left;
+  background-color: black;
+  box-shadow:0px 0px 8px green;
+}
+.infobox_speed
+{
+  font-weight: bold;
+  font-family:Microsoft JhengHei;
+}
+.flexbox_travel
+{
+  width:100%;
+  margin-bottom:10px;
+	overflow:hidden;
+	display:none;
+}
+.newsdiv
+{
+  background-color: #f1fff3;
+  overflow: hidden;
+  margin:10px;
+  height:auto;
+  padding:10px;
+  box-shadow: 0px 0px 4px black;
+  font-family:Microsoft JhengHei;
+}
+.newscontent
+{
+  text-align: justify;
+  height:200px;
+  overflow:hidden;
+  font-family:Microsoft JhengHei;
+}
+.morecontent
+{
+  text-align:right;
+  color:green;
+}
+.morecontent:hover
+{
+  color: yellowgreen;
+}
+.region
+{
+  padding:5px;
+}
+.region:hover
+{
+  color:white;
+}
+#myhistory
+{
+  display: none;
+  position: fixed;
+  overflow-y: scroll;
+  top:5%;
+  left:5%;
+  width: 90%;
+  height: 90%;
+  padding: 0px;
+  margin:0px;
+  background-color: white;
+  z-index: 13;
+  box-shadow: 0px 0px 4px black;
+}
+.speedhis
+{
+  position: relative;
+  background-color:#3bc073;
+  width:96%;
+  height:auto;
+  margin-top:10px;
+  margin-left:2%;
+}
+.updatebtn
+{
+  position: absolute;
+  padding:5px;
+  width:auto;
+  height:auto;
+  right:5px;
+  bottom:5px;
+  background-color: green;
+  color:white;
+  font-family:Microsoft JhengHei;
+  border-radius: 4px;
+}
+.updatebtn:hover
+{
+  background-color: white;
+  color:green;
+}
+.changeRoute
+{
+  float:right;
+  border-radius: 4px;
+  padding:5px;
+  font-weight:normal;
+  color:white;
+  margin-left:10px;
+  background-color:green;
+}
+.changeRoute:hover
+{
+  background-color:yellowgreen;
+  color:black;
+  font-weight:bold;
+}
+.flexbox_love
+{
+  width:100%;
+  margin-bottom:10px;
+	overflow:hidden;
+	display:none;
+}
+.addpoint
+{
+  padding:5px;
+  background-color: green;
+  color:white; 
+  position: absolute;
+}
+.addpoint:hover
+{
+  background-color: yellowgreen;
+}
+#love_list
+{
+  height:400px;
+  width:calc(100% - 12px);
+  margin:6px;
+  box-shadow:0px 0px 6px black;
+}
+#love_list_ul li
+{
+  position: relative;
+  margin:5px;
+  padding:10px;
+  background-color: #46db84;
+}
+.love_list_button
+{
+  width: auto;
+  padding:3px;
+  border-radius: 5px;
+  background-color: green;
+  color:white;
+}
+.loveRoute
+{
+  border-radius: 5px;
+  position: absolute;
+  top:6px;
+  right:20px;
+  padding:3px;
+  background-color: black;
+  color: white;
+}
+.loveRoute:hover
+{
+  color:green;
+}
