@@ -1,3 +1,5 @@
+//新聞功能，必須請學長開API才會動XD
+
 pagenum = 0;
 articlenum = 0;
 scroll_trigger = 0;

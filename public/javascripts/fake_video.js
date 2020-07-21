@@ -1,3 +1,5 @@
+//在路線上顯示及時監視攝影機，目前是手動插入資料，未來要根據資料庫的資料自動判斷座標來插入
+
 var videomarker=[];
 var videoopen=0;
 function fake_video()

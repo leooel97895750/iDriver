@@ -1,3 +1,5 @@
+//在路線上顯示測速照相位置
+
 var speedinfomarker = [];
 //紀錄BID, limit
 var speedBID = [];
@@ -19,8 +21,8 @@ function get_fake_speedinfo()
         speedopen=1;
         for (let item of regionset)
         {
-            var speed_url = "http://163.22.21.80:1124/api/getviewdata.ashx?method=iDriver/getCOData&CID="+item+"&Type=1";
-            getAPI(speed_url,get_object);
+            var speed_url = "https://chatbot.csie.ncnu.edu.tw:2235/api/getviewdata.ashx?method=iDriver/getCOData&CID="+item+"&Type=1";
+            getAPI(speed_url, get_object);
         }
     }
 }
@@ -31,7 +33,7 @@ function get_object(xhttp)
     for(var i=0; i<objectlength; i++)
     {
         var myoid = object_json.ItemSet.getCOData[i].OID;
-        var myurl = "http://163.22.21.80:1124/api/getviewdata.ashx?method=iDriver/getOData_Speedinfo&OID="+myoid;
+        var myurl = "https://chatbot.csie.ncnu.edu.tw:2235/api/getviewdata.ashx?method=iDriver/getOData_Speedinfo&OID="+myoid;
         getAPI(myurl,get_odata);
     }
 }

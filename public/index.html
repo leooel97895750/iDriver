@@ -17,7 +17,7 @@
         <script src="javascripts/news.js"></script>
         <script src="javascripts/google_map.js"></script>
         <script src="javascripts/speedinfo.js"></script>
-        <script src="javascripts/fake_traffic.js"></script>
+        <script src="javascripts/traffic.js"></script>
         <script src="javascripts/weather.js"></script>
         <script src="javascripts/fake_video.js"></script>
         <script src="javascripts/mygeocoding.js"></script>
@@ -200,70 +200,7 @@
             </article> 
         </div>
 
-        <!--道路資訊-->
-        <div class="flexbox_roadinfo">
-            <article>
-                <h1 style="margin:0px; margin-left:5px;padding:5px;">道路資訊</h1>
-                
-                <form name=theform style="margin-bottom:5px">
-                    <!--選項1 按下後menu中radio_speedinfo執行gettaiwan-->
-                    <input type="radio" name="radioname" value="1" style="margin-left:10px" onclick="radio_speedinfo()">
-                    <div class="inputspeedinfo" style="display:inline;margin:0px;padding:5px;">全台</div>
-                    <!--選項2-->
-                    <input type="radio" name="radioname" value="2" onclick="radio_speedinfo()">
-                    <div class="inputspeedinfo" style="display:inline;margin:0px;padding:5px;">區域</div>
-                    <!--選項3-->
-                    <input type="radio" name="radioname" value="3" onclick="radio_speedinfo()">
-                    <div class="inputspeedinfo" style="display:inline;margin:0px;padding:5px;">縣市</div>
-                    <!--選項4-->
-                    <input type="radio" name="radioname" value="4" onclick="radio_speedinfo()">
-                    <div class="inputspeedinfo" style="display:inline;margin:0px;padding:5px;">鄉鎮</div>
-                </form>
-
-                <!--區域選單-->
-                <div id="areaspeed">
-                    <p onclick = "getarea(2)">北部</p>
-                    <p onclick = "getarea(3)">中部</p>
-                    <p onclick = "getarea(4)">南部</p>
-                    <p onclick = "getarea(5)">東部</p>
-                    <p onclick = "getarea(6)">離島</p>
-                    <p onclick = "getarea(397)">國道</p>
-                </div>
-                <!--輸入縣市-->
-                <div id="cityspeed">
-                    <input id="city_city" placeholder="輸入縣市" on style="margin-left:10px;width:40%;padding:5px;border: green 1px solid;">
-                    <img class="mymouse" onclick="findcitycid()" src="images/find.png" title="搜尋" style="width:25px;height:25px">
-                    <script>
-                        $("#city_city").keypress(function(e){
-                            code = (e.keyCode ? e.keyCode : e.which);
-                            if (code == 13)
-                            {
-                                findcitycid();
-                            }
-                        });
-                    </script>
-                </div>
-                <!--輸入鄉鎮-->
-                <div id="regionspeed">
-                    <input id="region_city" placeholder="輸入縣市" style="margin-left:10px;width:40%;padding:5px;border: green 1px solid;">
-                    <input id="region_region" placeholder="輸入鄉鎮" style="width:40%;padding:5px;border: green 1px solid;">
-                    <img class="mymouse" onclick="findregioncid()" src="images/find.png" title="搜尋" style="width:25px;height:25px">
-                    <script>
-                        $("#region_region").keypress(function(e){
-                            code = (e.keyCode ? e.keyCode : e.which);
-                            if (code == 13)
-                            {
-                                findregioncid();
-                            }
-                        });
-                    </script>
-                </div>
-                
-                <div class="wrap" style="position: relative">
-                    <div id="map_info"><div>
-                </div>
-            </article>
-        </div>
+        
         <!--旅遊時事-->
         <div class="flexbox_travel">
             <img src="images/to_top.png" onclick="backtop()" style='position: fixed;right:10px;bottom:10px;width:47px;height:45px;opacity: 0.8'>
@@ -308,6 +245,7 @@
             <p style="color:white;text-align: center;">My Email : leo97895750@gmail.com</p>
             <div id="footer"></div>
         </footer>
+        <!--key請自己申請一個-->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCfynfSQU-J-AVUeW3IPRK79atoD2UtRE&libraries=places"></script>
     </body>
     

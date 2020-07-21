@@ -1,3 +1,5 @@
+//包裝ajax
+
 "use strict;"
 
 function getAPI(url, callFun) {

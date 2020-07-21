@@ -1,3 +1,5 @@
+// 沿路天氣功能
+
 var weather_url = {
     "宜蘭縣":"https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-001?Authorization=CWB-D99D1DAB-94AB-4736-AFCB-B104730ACF1A&format=JSON&locationName=",
     "桃園市":"https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-D0047-005?Authorization=CWB-D99D1DAB-94AB-4736-AFCB-B104730ACF1A&format=JSON&locationName=",
@@ -40,7 +42,7 @@ function get_weather()
         for(let item of regionset)
         {
             sleeptime++;
-            getCData_url = "http://163.22.21.80:1124/api/getviewdata.ashx?method=iDriver%2FgetCData&CID="+item+"&Type=1";
+            getCData_url = "https://chatbot.csie.ncnu.edu.tw:2235/api/getviewdata.ashx?method=iDriver/getCData&CID="+item+"&Type=1";
             getAPI(getCData_url,getNamepath);
             
         }

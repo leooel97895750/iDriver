@@ -1,3 +1,5 @@
+//抓取使用者位置，目前無功能，未來可做Location Based Services
+
 var myPosition_lat = 0;
 var myPosition_lon = 0;
 var nowBID = 0;

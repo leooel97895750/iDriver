@@ -1,3 +1,5 @@
+//透過抓到的使用者經緯，換算所在鄉鎮，取得鄉鎮可透過氣象局API取資料，氣象局API也請自己申請(不要用我的)
+
 const regionset = new Set();
 const weatherset = new Set();
 var lonset = [];
@@ -9,7 +11,7 @@ function mygeocoding(path)
     {
         var myLon = path[i].lng();
         var myLat = path[i].lat();
-        var geoapi = "http://163.22.21.80:1124/api/getviewdata.ashx?method=iDriver%2FGeoCoding&myLat="+myLat+"&myLon="+myLon;
+        var geoapi = "https://chatbot.csie.ncnu.edu.tw:2235/api/getviewdata.ashx?method=iDriver/GeoCoding&myLat="+myLat+"&myLon="+myLon;
         getGeoAPI(geoapi, addToSet, myLon, myLat);
     }
 }

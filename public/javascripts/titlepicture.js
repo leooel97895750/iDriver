@@ -1,3 +1,5 @@
+// 封面的圖片輪替功能
+
 var picture_num = 2;
 var picture_time = 0;
 var picture_top = 1;

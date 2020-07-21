@@ -1,3 +1,5 @@
+//語音辨識功能
+
 var newspeednum = 0;
 var tnum = 4;
 var rnum = 4;

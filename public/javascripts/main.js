@@ -1,3 +1,4 @@
+//一些滑鼠點擊會換圖片之類的不重要功能
 
 function change_img_sp()
 {

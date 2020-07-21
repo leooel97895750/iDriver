@@ -1,3 +1,5 @@
+//一些頁面切換、目錄切換，透過改div的display來做到SPA(Single Page Application)的設計
+
 var open = 1;//紀錄左側目錄的開關
 var asideopen = 0;//asidebar的開關  貌似沒用了
 var memberopen = 0;//會員功能欄的開關
@@ -10,7 +12,7 @@ function menumove()
         var menu = document.getElementById('verticalbar');
         var dark = document.getElementById('dark');
         var pos = -150;
-        dark.style.zIndex = "4";
+        dark.style.zIndex = "10";
         dark.style.display = "block";
         var id = setInterval(frame,5); 
         function frame() {
@@ -51,7 +53,7 @@ function membermove()
         memberopen=1;
         $("#member_detail").slideDown();
         var dark = document.getElementById('dark');
-        dark.style.zIndex = "4";
+        dark.style.zIndex = "10";
         dark.style.display = "block";
         var pos = -150;
         var id = setInterval(frame,5); 

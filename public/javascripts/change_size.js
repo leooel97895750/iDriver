@@ -1,3 +1,5 @@
+//當頁面載入後根據設備調整各個物件大小
+
 function print_width()
 {
     var mywidth = document.body.clientWidth;

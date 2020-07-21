@@ -1,3 +1,5 @@
+//加入最愛的功能，尚未結合資料庫
+
 function love_button()
 {
     var endWord = $("#input_end").val();

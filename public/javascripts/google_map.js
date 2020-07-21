@@ -1,9 +1,5 @@
-function loadScript() {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBCfynfSQU-J-AVUeW3IPRK79atoD2UtRE&callback=init_map";
-  document.body.appendChild(script);
-}
+//處理google map api，修修改改可能有一些無用程式碼，自行斟酌(sorry)
+
 //全域變數宣告
 var map_direction;
 var map_roadinfo;
@@ -390,5 +386,5 @@ function travelMode(type)
 function highwayAndToll()
 {
   isHighway = $("#myhighway").prop("checked");
-  isToll = $("myToll").prop("checked");
+  isToll = $("#myToll").prop("checked");
 }

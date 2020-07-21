@@ -1,3 +1,5 @@
+// 發出聲音的功能(如同google小姐)，但不太穩定，需要再測試
+
 function tryToSpeak(sentence)
 {
     var speechSynthesis = window.speechSynthesis;
